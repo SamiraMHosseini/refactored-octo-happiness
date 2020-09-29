@@ -23,7 +23,7 @@ jobs:
           node-version: '12.x'
       - run: npm install
       - run: npm install -g @angular/cli > /dev/null
-      - run: ng build --prod --output-path=dist --base-href="https://shinabro.github.io/demo2/"
+      - run: ng build --prod --output-path=dist --base-href="https://samiramhosseini.github.io/refactored-octo-happiness/"
       - name: Publish generated content to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.5.9
         with:
@@ -38,3 +38,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+
+
