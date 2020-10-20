@@ -6,11 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./travel.component.css']
 })
 
-export class TravelComponent  {
-   numberOfTravelers: number = 0;
+export class TravelComponent implements OnInit {
+  numberOfTravelers: number = 0;
   result: number = 0;
   costOfTrip: number = 150;
-
+  constructor()
+  {
+  }
+  ngOnInit(): void
+  {}
   travelCost(): void{
     this.result = this.numberOfTravelers * this.costOfTrip;
 
