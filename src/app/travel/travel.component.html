@@ -23,15 +23,15 @@
     </select> <br><br>
   </div>
   <div>
-  <label  class="label label-primary" for="travelDate">Enter Travel Date: </label>
+  <label for="travelDate">Enter Travel Date: </label>
   <input class="dropdown"type="date" id="travelDate" name="travelDate" min="2020-09-19"> <br><br>
 </div>
 <div>
-  <label class = "label label-success" for="numberOfTravelers">Number of travelers: </label>
-  <input  class="dropdown" type="number" id="numberOfTravelers" [(ngModel)]="numberOfTravelers" name="numberOfTravelers"  value="0" min="0"> <br><br>
+  <label  for="numberOfTravelers">Number of travelers: </label>
+  <input  type="number" id="numberOfTravelers" [(ngModel)]="numberOfTravelers" name="numberOfTravelers"  value="0" min="0"> <br><br>
 </div>
 <div>
- <input (click)="travelCost()" type="submit" id="pressMe"  name="pressMe"> <br><br>
+ <input class="btn btn-success" (click)="travelCost()" type="submit" id="pressMe"  name="pressMe"> <br><br>
 </div>
 
   <label  for="costOfTrip" > It will cost you ${{result}} to go on this trip!  </label>
