@@ -1,6 +1,6 @@
 
-<h2>Welcome {{title}}</h2>
-<form action="/action_page.php">
+<h2> Welcome {{title}}</h2>
+<form>
 
   <label for="originationAirport">Enter Origination Airport:  </label>
 
@@ -24,10 +24,11 @@
   <input type="date" id="travelDate" name="travelDate" min="2020-09-19"> <br><br>
 
   <label for="numberOfTravelers">Number of travelers: </label>
-  <input type="number" id="numberOfTravelers" name="numberOfTravelers"  value="0"> <br><br>
+  <input  type="number" id="numberOfTravelers" [(ngModel)]="numberOfTravelers" name="numberOfTravelers"  value="0" min="0"> <br><br>
 
-  <input type="submit">
+  <input (click)="travelCost()" type="submit" id="pressMe"  name="pressMe"> <br><br>
 
+  <label  for="costOfTrip" > You should pay ${{result}} for this trip:  </label>
 </form>
 
 

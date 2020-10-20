@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Samira Mohamadhoseini';
+    title: string = 'Samira Mohamadhoseini';
+    numberOfTravelers: number = 0;
+    result: number = 0;
+
+    travelCost(): void{
+      this.result = this.numberOfTravelers * 150;
+
+    }
+
+
 }
+
