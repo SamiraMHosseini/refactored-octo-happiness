@@ -3,7 +3,7 @@
 <form class="form-group">
 <div class="divbody">
   <div>
-  <label for="originationAirport">Enter Origination Airport:  </label>
+  <label class="text-primary"for="originationAirport">Enter Origination Airport:  </label>
 
     <select class="form-control" name="originationAirport" id="originationAirport">
       <option value="laguardia">LaGuardia</option>
@@ -24,16 +24,16 @@
     </select> <br><br>
   </div>
   <div>
-  <label for="travelDate">Enter Travel Date: </label>
+  <label  class="label label-primary" for="travelDate">Enter Travel Date: </label>
   <input type="date" id="travelDate" name="travelDate" min="2020-09-19"> <br><br>
 </div>
 <div>
-  <label for="numberOfTravelers">Number of travelers: </label>
+  <label class = "label label-success" for="numberOfTravelers">Number of travelers: </label>
   <input  type="number" id="numberOfTravelers" [(ngModel)]="numberOfTravelers" name="numberOfTravelers"  value="0" min="0"> <br><br>
 </div>
-
-
-  <input (click)="travelCost()" type="submit" id="pressMe"  name="pressMe"> <br><br>
+<div>
+ <input (click)="travelCost()" type="submit" id="pressMe"  name="pressMe"> <br><br>
+</div>
 
   <label  for="costOfTrip" > It will cost you ${{result}} to go on this trip!  </label>
 </div>
