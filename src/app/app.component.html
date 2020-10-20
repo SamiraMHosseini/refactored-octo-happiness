@@ -1,36 +1,5 @@
-
 <h2> Welcome {{title}}</h2>
-<form>
-
-  <label for="originationAirport">Enter Origination Airport:  </label>
-
-    <select name="originationAirport" id="originationAirport">
-      <option value="laguardia">LaGuardia</option>
-      <option value="lax">LAX </option>
-      <option value="atl">ATL</option>
-      <option value="jfk">JFK</option>
-
-    </select> <br><br>
-
-  <label for="destinationAirport">Enter Destination Airport:  </label>
-  <select name="destinationAirport" id="destinationAirport">
-      <option value="jfk">JFK</option>
-      <option value="laguardia">LaGuardia</option>
-      <option value="lax">LAX </option>
-      <option value="atl">ATL</option>
-
-    </select> <br><br>
-  <label for="travelDate">Enter Travel Date: </label>
-  <input type="date" id="travelDate" name="travelDate" min="2020-09-19"> <br><br>
-
-  <label for="numberOfTravelers">Number of travelers: </label>
-  <input  type="number" id="numberOfTravelers" [(ngModel)]="numberOfTravelers" name="numberOfTravelers"  value="0" min="0"> <br><br>
-
-  <input (click)="travelCost()" type="submit" id="pressMe"  name="pressMe"> <br><br>
-
-  <label  for="costOfTrip" > You should pay ${{result}} for this trip:  </label>
-</form>
-
+<app-travel></app-travel>
 
 
 
