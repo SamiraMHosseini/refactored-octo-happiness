@@ -5,7 +5,7 @@
   <div>
   <label class="text-primary"for="originationAirport">Enter Origination Airport:  </label>
 
-    <select class="form-control" name="originationAirport" id="originationAirport">
+    <select class="dropdown" name="originationAirport" id="originationAirport">
       <option value="laguardia">LaGuardia</option>
       <option value="lax">LAX </option>
       <option value="atl">ATL</option>
@@ -25,11 +25,11 @@
   </div>
   <div>
   <label  class="label label-primary" for="travelDate">Enter Travel Date: </label>
-  <input type="date" id="travelDate" name="travelDate" min="2020-09-19"> <br><br>
+  <input class="form-control"type="date" id="travelDate" name="travelDate" min="2020-09-19"> <br><br>
 </div>
 <div>
   <label class = "label label-success" for="numberOfTravelers">Number of travelers: </label>
-  <input  type="number" id="numberOfTravelers" [(ngModel)]="numberOfTravelers" name="numberOfTravelers"  value="0" min="0"> <br><br>
+  <input  class="form-control" type="number" id="numberOfTravelers" [(ngModel)]="numberOfTravelers" name="numberOfTravelers"  value="0" min="0"> <br><br>
 </div>
 <div>
  <input (click)="travelCost()" type="submit" id="pressMe"  name="pressMe"> <br><br>
