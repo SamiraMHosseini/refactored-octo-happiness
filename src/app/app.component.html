@@ -1,16 +1,13 @@
+<div>
+  <h2> Welcome {{title}}</h2>
+
+</div>
+
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark fixed-top">
   <ul class="navbar-nav">
     <div class = "navbar-header">
       <a class = "navbar-brand" ></a>
    </div>
-
-    <li class="nav-item dropdown">
-
-      <div class="dropdown-menu" aria-labelledby="routerLinkDropdown">
-        <a class="dropdown-item" [routerLink]="['/todo']">Todo</a>
-        <a class="dropdown-item" [routerLink]="['/student']">Student</a>
-      </div>
-    </li>
     <li class="nav-item">
       <a class="nav-link" [routerLink]="['/about']">About</a>
     </li>
