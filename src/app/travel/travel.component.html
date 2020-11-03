@@ -1,15 +1,15 @@
 
-<form class="form-group">
+<form class="container">
   <div class="p-3 mb-2 bg-warning text-dark">
     <div>
     <label for="originationAirport">Enter Origination Airport:  </label>
-  
+
       <select class="dropdown" name="originationAirport" id="originationAirport">
         <option value="laguardia">LaGuardia</option>
         <option value="lax">LAX </option>
         <option value="atl">ATL</option>
         <option value="jfk">JFK</option>
-  
+
       </select> <br><br>
     </div>
     <div>
@@ -19,7 +19,7 @@
         <option value="laguardia">LaGuardia</option>
         <option value="lax">LAX </option>
         <option value="atl">ATL</option>
-  
+
       </select> <br><br>
     </div>
     <div>
@@ -33,13 +33,12 @@
   <div>
    <input class="btn btn-success" (click)="travelCost()" type="submit" id="pressMe"  name="pressMe"> <br><br>
   </div>
-  
+
     <label  for="costOfTrip" > It will cost you ${{result}} to go on this trip!  </label>
   </div>
   </form>
-  
-  
-  
-  
-  
-  
+
+
+
+
+
