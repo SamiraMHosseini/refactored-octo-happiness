@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  environment = 'Windows 10 and WSL';
-  ide = 'VS Code';
+  environment = 'OS Windows 10 and WSL';
+  ide = 'ViSual Studio Code';
   constructor() { }
 
   ngOnInit(): void {
